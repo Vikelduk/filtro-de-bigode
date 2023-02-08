@@ -1,41 +1,28 @@
 <html>
-
 <head>
-  <meta charset="UTF-8">
-  <title>Introdução à p5.js</title>
+  <title>Aplicativo de Filtro de Bigode</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
 
-<style>
-h3
-{
-  font-size: 25px !important;
-}
+  <link rel="stylesheet" type="text/css" href="style.css">
 
-canvas 
-{
-  border:1px solid black;
-}
-</style>
 </head>
 
-<body>
-<div class="container">
-  <center>
-  <h1 class="btn btn-warning" style="width: 400px; height: 50px; font-size: 30px;">Brincando com o p5.js</h1>
+<body background="fundo sap escuro.jpg">
+<center>
+  <h3 class="btn btn-warning">Filtro de Bigode</h3>
   
   <br><br>
 
-  <button onclick="takeSnapshot();" class="btn btn-success">Tirar Foto</button>    
-  </center>
-</div>
+  <button onclick="takeSnapshot()" class="btn btn-success">Tirar Foto</button>
+</center>
 
 <script src="main.js"></script>
 </body>
 
 </html>
-
